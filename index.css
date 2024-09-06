@@ -1,0 +1,256 @@
+header{
+    padding:20px;
+    margin:0;
+    background-color: rgb(216, 218, 204); /* Cor clara */
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.titulo-header{
+    color: rgb(60, 120, 180); /* Azul claro suave */
+    margin-top: 60px;
+    margin-left:20px;
+}
+.lista-navegacao{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: center;
+}
+.item-lista{
+    display: inline-flex;
+    margin-top:40px;
+    margin-bottom: 40px;
+    margin-left:15px;
+    margin-right:15px;
+    font-size: 30px;
+    color: rgb(60, 60, 60); /* Cinza escuro para contraste */
+    cursor:pointer;
+    padding:5px;
+    text-decoration: none;
+}
+.anchor{
+    text-decoration: none;
+    color: rgb(60, 60, 60); /* Correspondente ao item-lista */
+}
+.item-lista:hover{
+    color: rgb(100, 100, 100); /* Cinza claro */
+    border: 2px solid rgb(200, 200, 200); /* Borda clara */
+    transition: 0.75s;
+}
+
+/* main */
+/* Sobre mim */
+.div-intro{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.sub-div-intro{
+    display:flex;
+    flex-direction:column;
+}
+main{
+    margin-top: -30px;
+    background-color: rgb(245, 245, 245); /* Cor clara */
+    padding: 100px;
+}
+@keyframes colorChange {
+    0% {
+        color: rgb(160, 82, 200); /* Roxo */
+    }
+    25% {
+        color: rgb(104, 192, 255); /* Azul */
+    }
+    50% {
+        color: rgb(60, 179, 113); /* Verde */
+    }
+    75% {
+        color: rgb(255, 165, 0); /* Laranja */
+    }
+    100% {
+        color: rgb(160, 82, 200); /* Volta ao roxo */
+    }
+}
+
+.titulo-principal{
+    font-size: 40px;
+    color: rgb(160, 82, 200); /* Roxo inicial */
+    font-family: 'Pixelify Sans', sans-serif;
+    animation: colorChange 5s infinite; /* Alterna cores a cada 5 segundos */
+}
+.hello-world{
+    color: rgb(80, 80, 80); /* Cinza médio */
+}
+#apresentacao{
+    width: 90%;
+    margin-top:25px;
+    font-size: 35px;
+    color: rgb(120, 120, 120); /* Lavanda clara */
+    font-family: 'Share Tech Mono', monospace;
+}
+.introducao{
+    width:550px;
+    margin-top:15px;
+    font-size: 20px;
+    color: rgb(80, 80, 80); /* Cinza suave */
+}
+.foto-perfil{
+    border-radius:50%;
+    height:350px;
+    width:350px;
+    margin-bottom:50px;
+    border:2px solid rgb(120, 120, 255); /* Azul claro */
+}
+/* Tecnologias */
+#titulo-tecnologias{
+    justify-content: center;
+    width:50%;
+    margin-left:25%;
+    font-size: 40px;
+    color: rgb(140, 70, 180); /* Roxo claro */
+    font-family: 'Pixelify Sans', sans-serif;
+}
+.div-tecnologias{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tech{
+    width:100px;
+    height: 100px;
+    margin:20px;
+}
+/* Habilidades */
+#titulo-habilidades{
+    justify-content: center;
+    width:50%;
+    margin-left:25%;
+    font-size: 40px;
+    color: rgb(140, 70, 180); /* Roxo claro */
+    font-family: 'Pixelify Sans', sans-serif;
+}
+.item-habilidade{
+    text-decoration:none;
+    color: rgb(60, 60, 60); /* Texto escuro para contraste */
+    font-size:25px;
+    margin:10px;
+}
+/* Projetos */
+#titulo-projetos{
+    justify-content: center;
+    width:50%;
+    margin-left:25%;
+    font-size: 40px;
+    color: rgb(140, 70, 180); /* Roxo claro */
+    font-family: 'Pixelify Sans', sans-serif;
+}
+.lista-projetos{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.projeto{
+    width: 30%;
+    border: solid 3px rgb(200, 200, 200); /* Borda clara */
+    display: flex;
+    flex-direction: column;
+    margin:25px;
+    align-items: center;
+    padding:20px;
+    background-color: rgb(250, 250, 250); /* Fundo claro */
+}
+.img-projeto{
+    width: 100%;
+    height: 280px;
+}
+.titulo-projeto{
+    color: rgb(60, 60, 60); /* Preto suave */
+    font-size: 30px;
+    font-family: 'Sometype Mono', monospace;
+}
+.tecnologias{
+    margin-top: -20px;
+    font-size: 25px;
+    font-family: 'Sometype Mono', monospace;
+}
+.icon-tecnologia{
+    width:50px;
+    height:50px;
+    border-radius: 10px;
+    margin:10px;
+}
+.botao{
+    width:100%;
+    padding:10px;
+    background-color: rgb(160, 82, 200); /* Roxo claro */
+    cursor: pointer;
+    border:none;
+}
+.botao:hover{
+    background-color: rgb(120, 60, 180); /* Roxo mais escuro */
+    transition: 0.7s;
+}
+.repositorio-gh{
+    text-decoration:none;
+    color: rgb(80, 80, 80); /* Cinza escuro */
+    margin:5px;
+}
+.repositorio-gh:hover{
+    color: rgb(100, 100, 100); /* Cinza claro */
+    transition:0.5s;
+    border-bottom:1px solid rgb(120, 120, 120);
+}
+.texto-botao{
+    color: rgb(250, 250, 250); /* Branco suave */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Footer - contato */
+.footer{
+    margin-top:-33px;
+    background-color: rgb(240, 240, 240); /* Cor clara */
+    padding:10px;
+}
+#titulo-footer{
+    justify-content: center;
+    width:50%;
+    margin-left:25%;
+    font-size: 40px;
+    color: rgb(140, 70, 180); /* Roxo claro */
+    font-family: 'Pixelify Sans', sans-serif;
+}
+.contato{
+    display:flex;
+    flex-direction:row;
+}
+.contact-icon{
+    height:50px;
+    width:50px;
+    margin-left: 50px;
+}
+.link-contato{
+    color: rgb(60, 60, 60); /* Texto escuro */
+    font-size:18px;
+    margin-left:15px;
+}
+.fim{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+}
+.orc-icon{
+    height:40px;
+    width:40px;
+    margin-left:45%;
+    border:1px solid rgb(100, 200, 100); /* Verde claro */
+    border-radius:50%;
+    padding:3px;
+    background-color: rgb(180, 240, 180); /* Verde suave */
+}
+.desenvolvedor{
+    margin-left:30%;
+    color: rgb(80, 80, 80); /* Cinza escuro */
+}
